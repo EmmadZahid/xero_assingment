@@ -1,0 +1,66 @@
+@import "mixin.scss";
+
+.card-layout{
+    margin-left: 40px;
+    padding-top: 40px;
+    @include box-sizing;
+    height: 100%;
+}
+
+.theme-a{
+    width: 400px;
+    padding: 40px 0px 0px 0px;
+    height: 100%;
+    overflow: hidden;
+    @include gradient-linear(to bottom, rgba(255,255,255,0.7) 75%, transparent);
+
+    @include box-sizing();
+    $copyrightHeight: 20px;
+
+    .theme-area{            //Basically used for showing copyright at bottom
+        min-height: 100%;
+        margin-bottom: -$copyrightHeight;   //Copy right height in negative
+        width: 100%;
+        .push{
+            height: $copyrightHeight + $copyrightHeight;   
+        }
+    }  
+
+    md-input-container{
+        margin-bottom: 15px;
+    }
+
+    .logo{
+        @include transition(padding,0.6s);
+        padding-top: 60px;
+        text-align: center;
+        img{
+            width: 130px;
+        }
+    }
+
+    .middle-box{
+        @include transition(margin,0.6s);
+        margin: 30px 0px 15px 0px;
+        padding: 30px 30px 15px 30px;
+    }
+
+    .help-link{
+        text-align: center;
+    }
+
+    .default-hyperlink{
+        color: #205F8A;
+        font-weight: 500;
+    }
+}
+
+.password-field{
+    img{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+    }
+}

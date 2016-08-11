@@ -1,0 +1,38 @@
+@mixin box-sizing() {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin ellipsis(){
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin transition($prop,$time){
+    -moz-transition: $prop linear $time;
+    -webkit-transition: $prop linear $time;
+    transition: $prop linear $time;
+}
+
+@mixin transition-delay($time){
+    -moz-transition-delay: $time;
+    -webkit-transition-delay:$time;
+    transition-delay:$time;
+}
+
+@mixin gradient-linear($direction, $color, $transparency){
+    background: -webkit-linear-gradient($direction, $color, $transparency);
+    background: -o-linear-gradient($direction, $color, $transparency);
+    background: -moz-linear-gradient($direction, $color, $transparency);
+    background: linear-gradient($direction, $color, $transparency);
+}
+
+@mixin filter-blur($px){
+    -webkit-filter: blur($px);
+    -moz-filter: blur($px);
+    -o-filter: blur($px);
+    -ms-filter: blur($px);
+    filter: blur($px);
+}

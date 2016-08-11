@@ -1,0 +1,63 @@
+.card-layout {
+  margin-left: 40px;
+  padding-top: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%; }
+
+.theme-a {
+  width: 400px;
+  padding: 40px 0px 0px 0px;
+  height: 100%;
+  overflow: hidden;
+  background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 75%, transparent);
+  background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 75%, transparent);
+  background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 75%, transparent);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 75%, transparent);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .theme-a .theme-area {
+    min-height: 100%;
+    margin-bottom: -20px;
+    width: 100%; }
+    .theme-a .theme-area .push {
+      height: 40px; }
+  .theme-a md-input-container {
+    margin-bottom: 15px; }
+  .theme-a .logo {
+    -moz-transition: padding linear 0.6s;
+    -webkit-transition: padding linear 0.6s;
+    transition: padding linear 0.6s;
+    padding-top: 60px;
+    text-align: center; }
+    .theme-a .logo img {
+      width: 130px; }
+  .theme-a .middle-box {
+    -moz-transition: margin linear 0.6s;
+    -webkit-transition: margin linear 0.6s;
+    transition: margin linear 0.6s;
+    margin: 30px 0px 15px 0px;
+    padding: 30px 30px 15px 30px; }
+  .theme-a .help-link {
+    text-align: center; }
+  .theme-a .default-hyperlink {
+    color: #205F8A;
+    font-weight: 500; }
+
+.password-field img {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  cursor: pointer; }
+
+body {
+  background-image: url("http://542partners.com.au/wp-content/uploads/2015/04/mac_accounting_hero_image.jpg");
+  background-size: cover; }
+
+.full-width {
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
