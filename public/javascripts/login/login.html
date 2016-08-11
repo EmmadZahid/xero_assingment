@@ -14,7 +14,7 @@
                           </div>
                       </md-input-container>
                       <md-input-container class="md-block password-field">
-                          <input name="password" ng-minlength="6" ng-model="password" placeholder="Password" type="{{fieldType}}" ng-init="fieldType = 'password'" required>
+                          <input name="password" ng-minlength="6" ng-model="password" placeholder="Password" type="{{fieldType}}" ng-init="fieldType = 'password'" required ng-change="onNumberFieldChange()">
                           <img src="/images/icon-pass.png" ng-click="showPass = true; fieldType = 'text';" ng-show="!showPass" />
                           <img src="/images/icon-pass-show.png" ng-click="showPass = false; fieldType = 'password';" ng-show="showPass" />
                           <div ng-messages="signInForm.password.$error">

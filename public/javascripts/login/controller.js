@@ -21,12 +21,12 @@ function LoginController($scope, $state, auth){
         };
 
         var signInSuccess = function (data) {
-            alert("success");
+            
             $state.go('home');
         };
 
         var signInError = function (response) {
-            alert("error");
+            
             if (response.status == 401) {
                 $scope.signInForm['username'].$setValidity('invalidAuth', false);
             }
